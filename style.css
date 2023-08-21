@@ -1,0 +1,183 @@
+/** @format */
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,500;1,600;1,700&family=Quicksand:wght@400;500;600;700&display=swap");
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.container-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(0, 0, 0);
+  padding: 6px;
+}
+
+.container-header img {
+  width: 66px;
+}
+
+.container-header .navbar {
+  margin-top: auto;
+}
+
+.container-header .navbar li {
+  display: inline;
+}
+
+.container-header .navbar li a {
+  text-decoration: none;
+  padding: 1.2rem 0.2rem 1.2rem 0.2rem;
+  width: 1px;
+  margin-inline-start: 1rem;
+  font-size: 17px;
+  font-family: "Poppins";
+  color: white;
+}
+
+.container-header .navbar li a:hover {
+  color: rgb(255, 208, 80);
+  border-bottom: 1px solid rgb(255, 208, 80);
+}
+
+.buttonSearch {
+  font-family: "Poppins";
+}
+
+/* _________________________________contact___________________________________ */
+.contact {
+  background-color: #1f8a70;
+  padding: 3rem 0 3rem 0;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.biodata {
+  display: flex;
+  align-items: center;
+}
+.biodata .card {
+  width: 150px;
+  border: none;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.biodata .card img {
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.biodata .deskripsi h5 {
+  font-family: "Poppins";
+  color: rgb(255, 255, 255);
+  padding-left: 1rem;
+  font-size: 20px;
+}
+
+.contact .socmed {
+  font-family: "Poppins";
+  color: aliceblue;
+  justify-content: center;
+  text-align: center;
+}
+.contact .socmed a {
+  font-size: 20px;
+  margin-inline: 10px;
+  color: black;
+}
+
+.contact .maps iframe {
+  border-radius: 20px;
+}
+
+/* ___________________________________Footer____________________________________ */
+footer {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 1rem;
+}
+
+footer p {
+  color: #ababab;
+  font-size: 12px;
+  font-family: "Poppins";
+}
+
+/*_______________________________ halaman rules____________________________________ */
+table tr td {
+  font-family: "Poppins";
+}
+
+/* _______________________________Media Query_______________________________________ */
+@media only screen and (max-device-width: 1366px) {
+}
+@media only screen and (max-device-width: 768px) {
+  .contact {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .biodata {
+    display: block;
+    margin-bottom: 3rem;
+    order: 0;
+  }
+  .biodata .card {
+    text-align: center;
+    margin: auto;
+    width: 250px;
+  }
+  .biodata .deskripsi {
+    margin-top: 1rem;
+  }
+  .biodata .deskripsi h5 {
+    font-family: "Poppins";
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+  }
+
+  .socmed {
+    order: 3;
+    margin-bottom: 1rem;
+  }
+
+  .contact .socmed h5 {
+    font-size: 25px;
+  }
+
+  .contact .socmed a {
+    font-size: 30px;
+    margin-inline: 10px;
+    color: black;
+  }
+
+  .maps {
+    order: 1;
+    margin-bottom: 3rem;
+  }
+
+  .contact .maps iframe {
+    height: 300;
+    width: 350;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-device-width: 460px) {
+}
